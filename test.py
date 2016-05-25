@@ -7,8 +7,6 @@ class Vehicles:
         self.vehicles = self.read_json('vehicles.json')
         self.vehicle_groups = self.read_json('vehicle_groups.json')
 
-        pprint(self.vehicle_groups)
-
     def read_json(self, file):
         with open(file) as data_file:
             return json.load(data_file)
