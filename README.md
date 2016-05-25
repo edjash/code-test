@@ -21,8 +21,8 @@
     - MySQL/MariaDB/Postgres
     - Redis/Memcached
     - Other backend languages (Ruby/Java/etc)
-10. Solve the following program using a language of your choice, we have included files for PHP and Python, these include
-helpers for parsing json. 
+10. Solve the following program using a language of your choice (Can even do it in pseudocode), we have included files for PHP and Python, these include
+helpers for parsing json, you can find these in the helpers folder. 
 
 We are looking for a class/function that combines the data from the two included JSON files (`vehicle_groups.json` and
 `vehicles.json`) and outputs the data in the following format (we expect a JSON response):
