@@ -1,6 +1,6 @@
 # Hare.digital Code Test
- 
-## Questions 
+
+## Questions
 **(You don't have to answer every question, just answer the ones you know)**
 
 1. Do you adhere to code standards in your chosen programming language?
@@ -22,31 +22,31 @@
     - Redis/Memcached
     - Other backend languages (Ruby/Java/etc)
 10. Solve the following program using a language of your choice (Can even do it in pseudocode), we have included files for PHP and Python, these include
-helpers for parsing json, you can just add your function to the bottom of these classes, these files are called helper with the extension of the language. 
+helpers for parsing json, you can just add your function to the bottom of these classes, these files are called helper with the extension of the language.
 
 We are looking for a class/function that combines the data from the two included JSON files (`vehicle_groups.json` and
 `vehicles.json`) and outputs the data in the following format (we expect a JSON response):
 
 ```
 {
-    "vehicles": [array],
-    "vehicle_stats": [object]
+    "vehicles": type:object,
+    "vehicle_stats": type:object
 }
  ```
- 
-In the `vehicles` array, we expect the vehicle id to be the key, and the object to be the value, with the following keys 
+
+In the `vehicles` object, we expect the vehicle id to be the key, and the object to be the value, with the following keys
 in the object:
 
 ```
-[
+{
 vehicle_id: {
-    "lat": [float],
-    "lng": [float],
-    "speed": [float],
-    "groups": [array of integers],
-    "status": [string]
+    "lat": type:float,
+    "lng": type:float,
+    "speed": type:float,
+    "groups": type:array of integers,
+    "status": type:string
     },...
-]
+}
 ```
 
 An example of this would be:
@@ -54,7 +54,7 @@ An example of this would be:
 ```
 {
     "vehicles": [
-        7: {
+        "7": {
             "lat": 55.555,
             "lng": 22.222,
             "speed": 47.5,
@@ -68,10 +68,10 @@ An example of this would be:
 }
 ```
 
-As you can see, the vehicles array holds an array of integers, these are the groups that the vehicle belongs to, these 
+As you can see, the vehicles array holds an array of integers, these are the groups that the vehicle belongs to, these
 are gathered from the `vehicle_groups.json`.
 
-In the `vehicle_stats` object we expect the keys to be strings, these are gathered from the vehicles and with a count of 
+In the `vehicle_stats` object we expect the keys to be strings, these are gathered from the vehicles and with a count of
 how many vehicles are of this status, there is also a total key with the total of all the vehicles, an example of this
 would be:
 
