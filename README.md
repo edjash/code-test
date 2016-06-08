@@ -29,8 +29,8 @@ We are looking for a class/function that combines the data from the two included
 
 ```
 {
-    "vehicles": type:object,
-    "vehicle_stats": type:object
+  "vehicles": type:object,
+  "vehicle_stats": type:object
 }
  ```
 
@@ -39,13 +39,13 @@ in the object:
 
 ```
 {
-vehicle_id: {
+  vehicle_id: {
     "lat": type:float,
     "lng": type:float,
     "speed": type:float,
     "groups": type:array of integers,
     "status": type:string
-    },...
+    }
 }
 ```
 
@@ -53,18 +53,17 @@ An example of this would be:
 
 ```
 {
-    "vehicles": [
-        "7": {
-            "lat": 55.555,
-            "lng": 22.222,
-            "speed": 47.5,
-            "groups": [
-                1,
-                2
-            ],
-            "status": 'parked'
-        },...
-    ]
+  "vehicles": [
+    "7": {
+      "lat": 55.555,
+      "lng": 22.222,
+      "speed": 47.5,
+      "status": "parked"
+      "groups": [1, 2]
+    },
+    "8": {...},
+    "9": {...}
+  ]
 }
 ```
 
@@ -77,12 +76,12 @@ would be:
 
 ```
 {
-    "vehicle_stats": {
-        "status_1": 5,
-        "status_2": 15,
-        "status_3": 10,
-        "total": 30
-    }
+  "vehicle_stats": {
+    "status_1": 5,
+    "status_2": 15,
+    "status_3": 10,
+    "total": 30
+  }
 }
 ```
 
