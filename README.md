@@ -53,7 +53,7 @@ An example of this would be:
 
 ```
 {
-  "vehicles": [
+  "vehicles": {
     "7": {
       "lat": 55.555,
       "lng": 22.222,
@@ -63,7 +63,7 @@ An example of this would be:
     },
     "8": {...},
     "9": {...}
-  ]
+  }
 }
 ```
 
