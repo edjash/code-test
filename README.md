@@ -45,7 +45,7 @@ in the object:
     "speed": type:float,
     "groups": type:array of integers,
     "status": type:string
-    }
+  }
 }
 ```
 
