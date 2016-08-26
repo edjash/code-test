@@ -7,11 +7,12 @@
 2. Are you familiar with object orientated programming?
 3. Most interesting/complicated project worked upon? How large was it?
 4. Familiarity with version control? Git?
-5. Familiarity with unit testing?
-6. Open source projects participation?
-7. What does your work environment look like? What tools do you use for development/debugging?
-8. Linux user/server administration experience? SSH?
-9. Rate how comfortable/experienced you are in the following areas
+5. Familiarity with tools for building, deploying and continuous integration (ex. Jenkins)?
+6. Familiarity with unit testing?
+7. Open source projects participation?
+8. What does your work environment look like? What tools do you use for development/debugging? How about build systems (Gulp, Grunt, etc)?
+9. Linux user/server administration experience? SSH?
+10. Rate how comfortable/experienced you are in the following areas
     - HTML
     - Sass/CSS
     - Javascript/JQuery
@@ -19,9 +20,10 @@
     - PHP
     - Python
     - MySQL/MariaDB/Postgres
+    - App development (Android/iPhone/React Native)
     - Redis/Memcached
     - Other backend languages (Ruby/Java/etc)
-10. Solve the following program using a language of your choice (Can even do it in pseudocode), we have included files for PHP and Python, these include
+11. Solve the following program using a language of your choice (Can even do it in pseudocode), we have included files for PHP and Python, these include
 helpers for parsing json, you can just add your function to the bottom of these classes, these files are called helper with the extension of the language.
 
 We are looking for a class/function that combines the data from the two included JSON files (`vehicle_groups.json` and
